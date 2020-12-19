@@ -1,0 +1,40 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item active">
+          <a class="nav-link" href="/" style="color: #ffb500; font-size: large;">Главная</a>
+        </li>
+      </ul>
+
+      <ul class ='navbar-nav mx-auto'>
+        <li class="nav-item active">
+          <a class="nav-link" href="{% url 'hotels' %}" style="color: #ffb500; font-size: large;">Отели</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://tp.media/r?marker=120716&p=660&u=https%3A%2F%2Flevel.travel%2F" style="color: #ffb500; font-size: large;">Туры</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.rzd.ru/" style="color: #ffb500; font-size: large;">ЖД Билеты</a>
+        </li>
+      </ul>
+
+      <ul class = 'navbar-nav mr-auto'>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.facebook.com/tezbilet.travel"><img src = "{% static 'image/fb.png' %}"></a>
+          <!---<img src="{%static 'newsite/images/w.png'%}"><a href="tel:0121234" class="contact-link">+996 (755) 35 09 50</a>-->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.instagram.com/tezbilet/"><img src = "{% static 'image/in.png' %}"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
